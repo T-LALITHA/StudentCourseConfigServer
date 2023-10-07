@@ -1,0 +1,18 @@
+  spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/student_db
+    username: root
+    password: Lally@1996
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+
+    eureka:
+  client:
+    eureka-server-u-r-l-context: http://localhost:8761/eureka/
+
+
+server:
+  port: 8080
